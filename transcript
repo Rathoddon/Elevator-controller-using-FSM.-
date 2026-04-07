@@ -1,0 +1,47 @@
+t=0 | state=            IDLE | floor=0 | pending=0000000000000000 | human=0 | obs=0 | pwr=0
+
+=== TC1: REQUEST FLOORS 4, 10 ===
+t=45000 | state=            IDLE | floor=0 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=55000 | state=         MOVE_UP | floor=0 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=65000 | state=         MOVE_UP | floor=1 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=75000 | state=         MOVE_UP | floor=2 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=85000 | state=         MOVE_UP | floor=3 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=95000 | state=       DOOR_OPEN | floor=4 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=205000 | state=      DOOR_CLOSE | floor=4 | pending=0000001000010000 | human=0 | obs=0 | pwr=0
+t=215000 | state=            IDLE | floor=4 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=225000 | state=         MOVE_UP | floor=4 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=235000 | state=         MOVE_UP | floor=5 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=245000 | state=         MOVE_UP | floor=6 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=255000 | state=         MOVE_UP | floor=7 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=265000 | state=         MOVE_UP | floor=8 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=275000 | state=       DOOR_OPEN | floor=9 | pending=0000001000000000 | human=0 | obs=0 | pwr=0
+t=285000 | state=       DOOR_OPEN | floor=9 | pending=0000000000000000 | human=0 | obs=0 | pwr=0
+t=385000 | state=      DOOR_CLOSE | floor=9 | pending=0000000000000000 | human=0 | obs=0 | pwr=0
+t=395000 | state=            IDLE | floor=9 | pending=0000000000000000 | human=0 | obs=0 | pwr=0
+
+=== TC2: REQUEST FLOORS 2, 1 ===
+t=475000 | state=            IDLE | floor=9 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=485000 | state=       MOVE_DOWN | floor=9 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=495000 | state=       MOVE_DOWN | floor=8 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=505000 | state=       MOVE_DOWN | floor=7 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=515000 | state=       MOVE_DOWN | floor=6 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=525000 | state=       MOVE_DOWN | floor=5 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=535000 | state=       MOVE_DOWN | floor=4 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=545000 | state=       MOVE_DOWN | floor=3 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=555000 | state=       DOOR_OPEN | floor=2 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=665000 | state=      DOOR_CLOSE | floor=2 | pending=0000000000000110 | human=0 | obs=0 | pwr=0
+t=675000 | state=            IDLE | floor=2 | pending=0000000000000010 | human=0 | obs=0 | pwr=0
+t=685000 | state=       MOVE_DOWN | floor=2 | pending=0000000000000010 | human=0 | obs=0 | pwr=0
+t=695000 | state=       DOOR_OPEN | floor=1 | pending=0000000000000010 | human=0 | obs=0 | pwr=0
+t=705000 | state=       DOOR_OPEN | floor=1 | pending=0000000000000000 | human=0 | obs=0 | pwr=0
+
+=== TC3: OVERLOAD (human_entered=10) ===
+t=800000 | state=       DOOR_OPEN | floor=1 | pending=0000000000000000 | human=10 | obs=0 | pwr=0
+t=805000 | state=       EMERGENCY | floor=1 | pending=0000000000000000 | human=10 | obs=0 | pwr=0
+t=860000 | state=       EMERGENCY | floor=1 | pending=0000000000000000 | human=2 | obs=0 | pwr=0
+t=865000 | state=            IDLE | floor=1 | pending=0000000000000000 | human=2 | obs=0 | pwr=0
+
+=== TC4: DOOR OBSTRUCTION ===
+t=920000 | state=            IDLE | floor=1 | pending=0000000000000000 | human=2 | obs=1 | pwr=0
+t=925000 | state=       EMERGENCY | floor=1 | pending=0000000000000000 | human=2 | obs=1 | pwr=0
+t=1000000 | state=       EMERGENCY | floor=1 | pending=0000000000000000 | human=2 | obs=0 | pwr=0
